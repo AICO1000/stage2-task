@@ -29,7 +29,7 @@ app.post("/", (req, res)=>{
   if (operation_type === "subtraction"){
     result=x-y 
   }
-  res.status(200).json( {result, x, y, slackUsername: "Aico"})
+  res.status(200).json( {slackUsername: "Aico", operation_type, result, x, y})
 })
 
 
